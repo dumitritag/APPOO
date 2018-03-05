@@ -99,7 +99,7 @@ public class Main {
 
                     case "1":
 
-                        value=roseStock.accept(new Person(),amount,user.getMoney(),false);
+                        value=roseStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
                         user.transaction(-1*value);
                         shopKeeper.transaction(value);
 
@@ -108,7 +108,7 @@ public class Main {
 
                     case "2":
 
-                        value=tulipsStock.accept(new Person(),amount,user.getMoney(),false);
+                        value=tulipsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                         user.transaction(-1*value);
 
@@ -118,7 +118,7 @@ public class Main {
 
                     case "3":
 
-                        value=carnationsStock.accept(new Person(),amount,user.getMoney(),false);
+                        value=carnationsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                         user.transaction(-1*value);
 
@@ -128,7 +128,7 @@ public class Main {
 
                     case "4":
 
-                        value=jasmineStock.accept(new Person(),amount,user.getMoney(),false);
+                        value=jasmineStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                         user.transaction(-1*value);
 
@@ -138,7 +138,7 @@ public class Main {
 
                     case "5":
 
-                        value=peoniesStock.accept(new Person(),amount,user.getMoney(),false);
+                        value=peoniesStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                         user.transaction(-1*value);
 
@@ -190,7 +190,7 @@ public class Main {
 
                                     case "1":
 
-                                        value=roseStock.accept(new Person(),amount,user.getMoney(),false);
+                                        value=roseStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                                         if(value>0){
 
@@ -208,7 +208,7 @@ public class Main {
 
                                     case "2":
 
-                                        value=tulipsStock.accept(new Person(),amount,user.getMoney(),false);
+                                        value=tulipsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                                         if(value>0){
 
@@ -226,7 +226,7 @@ public class Main {
 
                                     case "3":
 
-                                        value=carnationsStock.accept(new Person(),amount,user.getMoney(),false);
+                                        value=carnationsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                                         if(value>0){
 
@@ -244,7 +244,7 @@ public class Main {
 
                                     case "4":
 
-                                        value=jasmineStock.accept(new Person(),amount,user.getMoney(),false);
+                                        value=jasmineStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                                         if(value>0){
 
@@ -262,7 +262,7 @@ public class Main {
 
                                     case "5":
 
-                                        value=peoniesStock.accept(new Person(),amount,user.getMoney(),false);
+                                        value=peoniesStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
 
                                         if(value>0){
 

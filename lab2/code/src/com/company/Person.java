@@ -1,6 +1,6 @@
 package com.company;
 
-public class Person implements FlowerVisitor{
+public class Person{
     private String name;
     private double money;
 
@@ -31,11 +31,6 @@ public class Person implements FlowerVisitor{
 
     }
 
-    public double calculate(Flowers flowers){
-
-        return flowers.getPrice();
-
-    }
 
 }
 

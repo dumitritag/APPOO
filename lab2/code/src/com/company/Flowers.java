@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-class Flowers implements Flower {
+class Flowers implements Flower{
 
     private int amount;
     private double price;
