@@ -61,6 +61,14 @@ public class Main {
         System.out.println("Salut "+user.getName()+"! Bine ați venit la MintFlower! Cu ce vă pot ajuta?");
 
         do{
+            System.out.println();
+            System.out.print(shopKeeper.getName()+" are ");
+            System.out.printf("%.2f",shopKeeper.getMoney());
+            System.out.println("lei");
+            System.out.print(user.getName()+" are ");
+            System.out.printf("%.2f",user.getMoney());
+            System.out.println("lei");
+            System.out.println();
             System.out.println("1-Cumpăr");
             System.out.println("2-Ies");
 
@@ -94,6 +102,7 @@ public class Main {
                         value=roseStock.accept(new Person(),amount,user.getMoney(),false);
                         user.transaction(-1*value);
                         shopKeeper.transaction(value);
+
 
                         break;
 
@@ -292,7 +301,6 @@ public class Main {
                         }while(flowerCount!=11);
 
                         if(bouquetPrice>0){
-
                             System.out.print("Ați cumpărat un buchet de ");
                             System.out.printf("%.2f",bouquetPrice);
                             System.out.println("lei");
