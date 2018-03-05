@@ -144,7 +144,6 @@ class Flowers implements Flower{
 
     JLabel jLabel;
 
-    @Override
     public void view() {
 
         editorFrame = new JFrame("MintFlower");
