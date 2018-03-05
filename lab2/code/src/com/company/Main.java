@@ -19,13 +19,13 @@ public class Main {
 
         Scanner scanner=new Scanner(System.in);
 
-        System.out.println("Cum vă numiți?:");
+        System.out.println("Cum vă numiți?");
         String userName=scanner.nextLine();
 
         while(light==false){
             try{
 
-                System.out.println("Cîți bani doriți să cheltuiți?: ");
+                System.out.println("Cîți bani doriți să cheltuiți? ");
                 userMoney=Double.parseDouble(scanner.next());
 
             }
@@ -68,7 +68,7 @@ public class Main {
 
             if(userInput.equals("1")){
 
-                System.out.println("Ce dorești să cumperi?");
+                System.out.println("Ce doriți să cumpărați?");
                 System.out.println("1-Trandafiri");
                 System.out.println("2-Lalele");
                 System.out.println("3-Garoafe");
@@ -82,7 +82,7 @@ public class Main {
 
                 if(converted>0&&converted<6){
 
-                    System.out.println("Cîte vreai?");
+                    System.out.println("Cîte doriți?");
                     amount=scanner.nextInt();
 
                 }
@@ -293,7 +293,7 @@ public class Main {
 
                         if(bouquetPrice>0){
 
-                            System.out.print("Ați cumpărat un buchet de");
+                            System.out.print("Ați cumpărat un buchet de ");
                             System.out.printf("%.2f",bouquetPrice);
                             System.out.println("lei");
                             System.out.println();
