@@ -49,11 +49,11 @@ public class Main {
         user.setMoney(userMoney);
 
 
-        Flowers roseStock=new Flowers(20, 45.00, "trandafiri");
-        Flowers tulipsStock=new Flowers(20,20.00,"lalele");
-        Flowers carnationsStock=new Flowers(20, 15.00,"garoafe");
-        Flowers jasmineStock=new Flowers(20,25.00,"jasmin");
-        Flowers peoniesStock=new Flowers(20,30.00,"bujori");
+        Flowers roseStock=new Flowers(200, 45.00, "trandafiri");
+        Flowers tulipsStock=new Flowers(200,20.00,"lalele");
+        Flowers carnationsStock=new Flowers(200, 15.00,"garoafe");
+        Flowers jasmineStock=new Flowers(200,25.00,"jasmin");
+        Flowers peoniesStock=new Flowers(200,30.00,"bujori");
 
         String userInput;
         boolean flag=true;
@@ -326,7 +326,7 @@ public class Main {
 
                 flag=false;
 
-                System.out.println("Vă mulțumesc, vă mai aștemptăm!");
+                System.out.println("Vă mulțumim!");
 
                 System.exit(1);
 
