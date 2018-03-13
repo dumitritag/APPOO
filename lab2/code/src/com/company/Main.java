@@ -57,8 +57,12 @@ public class Main {
 
         String userInput;
         boolean flag=true;
+<<<<<<< HEAD
         FlowerShop mint=new FlowerShop();
         mint.view();
+=======
+        user.view();
+>>>>>>> master
         System.out.println("Salut "+user.getName()+"! Bine ați venit la MintFlower! Cu ce vă pot ajuta?");
 
         do{
