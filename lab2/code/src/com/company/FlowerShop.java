@@ -1,47 +1,12 @@
 package com.company;
 
-<<<<<<< HEAD
-public class Person{
-=======
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-public class Person implements FlowerVisitor{
->>>>>>> master
-    private String name;
-    private double money;
-
-
-    public void setMoney(double money) {
-        this.money = money;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName(){
-
-        return name;
-
-    }
-
-    public double getMoney(){
-
-        return money;
-
-    }
-
-    public void transaction(double money){
-
-        this.money+=money;
-
-    }
-
-
+public class FlowerShop implements MintFlower {
     JFrame editorFrame;
 
     ImageIcon imageIcon;
@@ -89,6 +54,4 @@ public class Person implements FlowerVisitor{
 
         editorFrame.setVisible(true);
     }
-
 }
-
