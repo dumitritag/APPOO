@@ -1,7 +1,7 @@
 package com.company;
 
 
-class Flowers implements Flower {
+class Flowers implements Flower{
 
     private int amount;
     private double price;
