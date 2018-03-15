@@ -1,5 +1,5 @@
 package com.company;
 
-public interface MintFlower {
+public interface Shop {
     public void view();
 }

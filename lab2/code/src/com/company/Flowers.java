@@ -16,8 +16,7 @@ class Flowers implements Flower{
 
     }
 
-    public double accept(FlowerVisitor flowerVisitor, int amount, double userMoney, boolean isOwner){
-        if(!isOwner){
+    public double buyFlowers(FlowersPrice flowersPrice, int amount, double userMoney){
 
             if(amount>this.amount){
                 System.out.println("Nu avem atât de multe flori în stoc!");
@@ -26,7 +25,7 @@ class Flowers implements Flower{
             }
             int actualAmount=checkInventory(amount);
 
-            double actualPrice=actualAmount*flowerVisitor.calculate(this);
+            double actualPrice=actualAmount*flowersPrice.calculate(this);
 
             if(userMoney<actualPrice){
                 System.out.println("Nu aveți suficienți bani pentru a efectua această tranzacție!");
@@ -52,39 +51,6 @@ class Flowers implements Flower{
 
         }
 
-        else{
-
-            double orderPrice=amount*flowerVisitor.calculate(this);
-
-            if(userMoney<orderPrice){
-
-                System.out.println("Nu aveți suficienți bani pentru a efectua această tranzacție!");
-
-                return 0;
-
-            }
-
-            else{
-
-                this.amount+=amount;
-
-                System.out.print("Ați cumpărat "+amount+" flori de");
-
-                System.out.printf("%.2f",orderPrice);
-
-                System.out.println("lei.");
-
-                System.out.println();
-
-                System.out.println("Acum sunt "+getAmount()+" flori în stoc.");
-
-            }
-
-            return orderPrice;
-
-        }
-
-    }
 
     public double getPrice(){
 
@@ -92,13 +58,6 @@ class Flowers implements Flower{
 
     }
 
-    public void setPrice(double price){
-
-        this.price=price;
-
-        System.out.println("Prețul a fost schimbat în"+this.price+"lei");
-
-    }
 
     public int getAmount(){
 

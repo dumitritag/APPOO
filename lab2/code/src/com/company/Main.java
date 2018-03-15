@@ -15,14 +15,14 @@ public class Main {
         shopKeeper.setMoney(0);
 
         double userMoney=0;
-        boolean light=false;
+        boolean condition=false;
 
         Scanner scanner=new Scanner(System.in);
 
         System.out.println("Cum vă numiți?");
         String userName=scanner.nextLine();
 
-        while(light==false){
+        while(condition==false){
             try{
 
                 System.out.println("Cîți bani doriți să cheltuiți? ");
@@ -38,7 +38,7 @@ public class Main {
 
             if(userMoney>0){
 
-                light=true;
+                condition=true;
 
             }
 
@@ -47,7 +47,6 @@ public class Main {
         user=new Person();
         user.setName(userName);
         user.setMoney(userMoney);
-
 
         Flowers roseStock=new Flowers(200, 45.00, "trandafiri");
         Flowers tulipsStock=new Flowers(200,20.00,"lalele");
@@ -100,7 +99,7 @@ public class Main {
 
                     case "1":
 
-                        value=roseStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                        value=roseStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
                         user.transaction(-1*value);
                         shopKeeper.transaction(value);
 
@@ -109,7 +108,7 @@ public class Main {
 
                     case "2":
 
-                        value=tulipsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                        value=tulipsStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                         user.transaction(-1*value);
 
@@ -119,7 +118,7 @@ public class Main {
 
                     case "3":
 
-                        value=carnationsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                        value=carnationsStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                         user.transaction(-1*value);
 
@@ -129,7 +128,7 @@ public class Main {
 
                     case "4":
 
-                        value=jasmineStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                        value=jasmineStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                         user.transaction(-1*value);
 
@@ -139,7 +138,7 @@ public class Main {
 
                     case "5":
 
-                        value=peoniesStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                        value=peoniesStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                         user.transaction(-1*value);
 
@@ -191,7 +190,7 @@ public class Main {
 
                                     case "1":
 
-                                        value=roseStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                                        value=roseStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                                         if(value>0){
 
@@ -209,7 +208,7 @@ public class Main {
 
                                     case "2":
 
-                                        value=tulipsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                                        value=tulipsStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                                         if(value>0){
 
@@ -227,7 +226,7 @@ public class Main {
 
                                     case "3":
 
-                                        value=carnationsStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                                        value=carnationsStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                                         if(value>0){
 
@@ -245,7 +244,7 @@ public class Main {
 
                                     case "4":
 
-                                        value=jasmineStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                                        value=jasmineStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                                         if(value>0){
 
@@ -263,7 +262,7 @@ public class Main {
 
                                     case "5":
 
-                                        value=peoniesStock.accept(new FlowerProcessingVisitor(),amount,user.getMoney(),false);
+                                        value=peoniesStock.buyFlowers(new FlowerProcessing(),amount,user.getMoney());
 
                                         if(value>0){
 

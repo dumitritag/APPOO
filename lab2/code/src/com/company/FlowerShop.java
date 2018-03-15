@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-public class FlowerShop implements MintFlower {
+public class FlowerShop implements Shop {
     JFrame editorFrame;
 
     ImageIcon imageIcon;
