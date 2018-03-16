@@ -1,5 +1,5 @@
 package com.company;
 
-public interface FlowersPrice {
-    public double calculate(Flowers flowers);
+interface FlowersPrice {
+  double calculate(Flowers flowers);
 }

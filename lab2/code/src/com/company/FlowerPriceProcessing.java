@@ -1,6 +1,6 @@
 package com.company;
 
-public class FlowerProcessing implements FlowersPrice {
+public class FlowerPriceProcessing implements FlowersPrice {
     public double calculate(Flowers flowers){
 
         return flowers.getPrice();
